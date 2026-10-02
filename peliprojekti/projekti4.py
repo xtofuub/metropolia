@@ -81,6 +81,17 @@ def main():
 
         if valinta == "1":
             kalasta(pelaaja)
+        elif valinta == "2":
+            print("\n1. Lampi")
+            print("2. Joki")
+            paikka = input("Valitse paikka: ")
+
+            if paikka == "1":
+                pelaaja.sijainti = lampi
+            elif paikka == "2":
+                pelaaja.sijainti = joki
+            else:
+                print("Väärä valinta.")
         elif valinta == "3":
             nayta_saalis(pelaaja)
         elif valinta == "4":
