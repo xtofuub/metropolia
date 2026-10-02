@@ -4,7 +4,7 @@
 
 Tämä on tekstipohjainen kalastuspeli.
 
-Alussa pelaaja syöttää nimen ja iän. Sen jälkeen voi kalastaa lammella tai joella. Kun kala tulee, pelaaja päättää pitääkö sen vai vapauttaako sen.
+Alussa pelaaja syöttää nimen ja iän. Sen jälkeen voi kalastaa eri paikoissa. Kun kala tulee, pelaaja päättää pitääkö sen vai vapauttaako sen.
 
 Pelin tavoitteena on saada kolme kalaa.
 
@@ -15,9 +15,13 @@ Päävalikossa on:
 1. Kalasta
 2. Vaihda paikkaa
 3. Näytä saalis
-4. Lopeta
+4. Tallenna peli
+5. Lataa peli
+6. Lopeta
 
 Kalastaessa peli arpoo kalan senhetkisestä paikasta. Kalan nimi ja paino näytetään ennen kuin pelaaja tekee päätöksen.
+
+Pelissä on kolme kalastuspaikkaa: Lampi, Joki ja Meri. Näistä voi valita oman reitin pelin aikana.
 
 ## Luokat
 
@@ -41,6 +45,8 @@ projekti4/
 
 Peli on yhdessä Python-tiedostossa, koska siinä ei ole vielä niin paljon koodia, että sitä olisi järkevää jakaa useaan tiedostoon.
 
+Pelissä käytetään myös `tallennus.json>-tiedostoa, kun peli tallennetaan.
+
 ## Kestävä kehitys
 
 Aihe liittyy YK:n tavoitteeseen 14, Vedenalainen elämä.
@@ -51,13 +57,16 @@ Pelissä kalan voi vapauttaa takaisin veteen. Tarkoituksena on tuoda esiin vastu
 
 - pelaajan nimi ja ikä
 - Pelaaja-, Huone- ja Esine-luokat
-- Lampi ja Joki
+- Lampi, Joki ja Meri
 - kalan arpominen
 - kalan pitäminen tai vapauttaminen
 - saaliin näyttäminen
 - kolmen kalan tavoite
+- pelin tallentaminen
+- tallennetun pelin lataaminen
+- kolme eri kalastusreittiä
 
-Projekti on vielä kesken.
+Pelissä on useita funktioita, joilla eri toimintoja on jaettu omiin osiin.
 
 ## Käynnistys
 
