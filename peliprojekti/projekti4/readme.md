@@ -45,7 +45,7 @@ projekti4/
 
 Peli on yhdessä Python-tiedostossa, koska siinä ei ole vielä niin paljon koodia, että sitä olisi järkevää jakaa useaan tiedostoon.
 
-Pelissä käytetään myös `tallennus.json>-tiedostoa, kun peli tallennetaan.
+Pelissä käytetään myös `tallennus.json`-tiedostoa, kun peli tallennetaan.
 
 ## Kestävä kehitys
 
