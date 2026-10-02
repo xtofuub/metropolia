@@ -2,34 +2,36 @@
 
 ## Idea
 
-Tässä projektissa tehdään yksinkertainen tekstipohjainen kalastuspeli. Pelaaja luo oman hahmonsa ja voi kalastaa eri paikoissa. Kaloja voi joko pitää tai vapauttaa.
+Tämä on tekstipohjainen kalastuspeli.
 
-Pelin tavoitteena on saada kolme kalaa saaliiksi.
+Alussa pelaaja syöttää nimen ja iän. Sen jälkeen voi kalastaa lammella tai joella. Kun kala tulee, pelaaja päättää pitääkö sen vai vapauttaako sen.
 
-## Pelin toiminta
+Pelin tavoitteena on saada kolme kalaa.
 
-Pelin alussa pelaaja antaa nimensä ja ikänsä. Pelaaja aloittaa lammelta.
+## Toiminnot
 
-Päävalikosta voi:
+Päävalikossa on:
 
-1. Kalastaa
-2. Vaihtaa kalastuspaikkaa
-3. Näyttää saaliin
-4. Lopettaa pelin
+1. Kalasta
+2. Vaihda paikkaa
+3. Näytä saalis
+4. Lopeta
 
-Kalastettaessa peli arpoo nykyisen kalastuspaikan kaloista yhden kalan. Pelaaja näkee kalan nimen ja painon ja voi päättää, pitääkö kalan vai vapauttaako sen.
+Kalastaessa peli arpoo kalan senhetkisestä paikasta. Kalan nimi ja paino näytetään ennen kuin pelaaja tekee päätöksen.
 
 ## Luokat
 
-Projektissa käytetään kolmea luokkaa:
+Pelissä on kolme luokkaa:
 
-- **Pelaaja** sisältää pelaajan nimen, iän, nykyisen sijainnin ja saaliin.
-- **Huone** kuvaa kalastuspaikkaa ja sen kaloja.
-- **Esine** kuvaa kalastettavaa kalaa. Sillä on nimi ja paino.
+- Pelaaja
+- Huone
+- Esine
 
-## Tiedostorakenne
+Pelaajalla on nimi, ikä, sijainti ja saalis. Huone tarkoittaa tässä kalastuspaikkaa ja sisältää siellä olevat kalat. Esine sisältää kalan nimen ja painon.
 
-Projekti 4 on omassa kansiossaan.
+## Tiedostot
+
+Projekti on tällä hetkellä tässä kansiossa:
 
 ```
 projekti4/
@@ -37,33 +39,27 @@ projekti4/
 └── readme.md
 ```
 
-Peli on tällä hetkellä toteutettu yhdessä Python-tiedostossa, koska projekti on vielä pieni. Jos peli kasvaa kehityksen aikana, toimintoja voidaan jakaa erillisiin moduuleihin.
+Peli on yhdessä Python-tiedostossa, koska siinä ei ole vielä niin paljon koodia, että sitä olisi järkevää jakaa useaan tiedostoon.
 
 ## Kestävä kehitys
 
-Peli liittyy YK:n kestävän kehityksen tavoitteisiin, erityisesti tavoitteeseen 14: **Vedenalainen elämä**.
+Aihe liittyy YK:n tavoitteeseen 14, Vedenalainen elämä.
 
-Pelissä pelaaja voi vapauttaa kalan takaisin veteen sen sijaan, että pitäisi kaikki saadut kalat. Pelin tarkoituksena on tuoda esille vastuullista kalastamista ja vesistöjen huomioimista.
+Pelissä kalan voi vapauttaa takaisin veteen. Tarkoituksena on tuoda esiin vastuullista kalastamista.
 
-## Nykyinen tila
-
-Peli on vielä kesken ja sitä kehitetään vaiheittain.
-
-Tällä hetkellä pelissä on:
+## Tällä hetkellä
 
 - pelaajan nimi ja ikä
-- kolme luokkaa
-- kaksi kalastuspaikkaa: Lampi ja Joki
-- kalojen arpominen
-- saaliin näyttäminen
+- Pelaaja-, Huone- ja Esine-luokat
+- Lampi ja Joki
+- kalan arpominen
 - kalan pitäminen tai vapauttaminen
-- pelin tavoite saada kolme kalaa
+- saaliin näyttäminen
+- kolmen kalan tavoite
 
-Myöhemmin peliin lisätään tarvittavia toimintoja ja ominaisuuksia projektin edetessä.
+Projekti on vielä kesken.
 
-## Käynnistäminen
-
-Peli käynnistetään suorittamalla tiedosto:
+## Käynnistys
 
 ```bash
 python projekti4.py
