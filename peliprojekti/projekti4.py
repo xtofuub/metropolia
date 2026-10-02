@@ -81,6 +81,12 @@ def main():
 
         if valinta == "1":
             kalasta(pelaaja)
+
+            if len(pelaaja.saalis) >= 3:
+                print("\nSait kolme kalaa!")
+                print("Tämä on pelin ensimmäinen versio.")
+                break
+
         elif valinta == "2":
             print("\n1. Lampi")
             print("2. Joki")
