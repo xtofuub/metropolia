@@ -1,8 +1,20 @@
-# Module 1 + 2 
-tehtävä 1
+# Metropolia
 
-# Module 3 
-tehtävät 1-6 + projekti init
+Metropolian Python-kurssin tehtäviä ja projekteja.
 
-# module 4 
-tehtävät 1-2 
+## Kansioita
+
+- `mod01`
+- `mod03`
+- `mod04`
+- `mod5`
+- `mod6`
+- `mod7`
+- `mod8`
+- `mod09`
+- `mod10`
+- `mod11`
+- `peliprojekti`
+- `tuntitehtävä`
+
+`mod`-kansioissa on kurssin tehtäviä ja `peliprojekti`-kansiossa peliprojekti.
