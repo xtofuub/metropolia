@@ -6,6 +6,11 @@ from modules.huone import Huone
 from modules.pelaaja import Pelaaja
 
 
+def lue_tiedosto(tiedostonimi):
+    with open(tiedostonimi, "r") as tiedosto:
+        return tiedosto.read()
+
+
 def nayta_valikko():
     print("\n--- KALAREISSU ---")
     print("1. Kalasta")
@@ -114,7 +119,9 @@ def lataa_peli(paikat, kalat, tiedosto):
 
 
 def main():
-    print("Tervetuloa kalareissulle!")
+    print(lue_tiedosto("intro.txt"))
+    print()
+    print(lue_tiedosto("instructions.txt"))
 
     ahven = Esine("Ahven", 0.8)
     särki = Esine("Särki", 0.5)
