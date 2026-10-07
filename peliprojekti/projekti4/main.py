@@ -158,7 +158,8 @@ def main():
 
             if len(pelaaja.saalis) >= 3:
                 print("\nSait kolme kalaa!")
-                print("Onneksi olkoon,", pelaaja.nimi + "!")
+                nayta_saalis(pelaaja)
+                print("\nOnneksi olkoon,", pelaaja.nimi + "!")
                 break
 
         elif valinta == "2":
