@@ -1,0 +1,8 @@
+Ohjeet:
+
+Valitse päävalikosta mitä haluat tehdä.
+
+Voit kalastaa, vaihtaa paikkaa ja katsoa saalistasi.
+Kun saat kalan, voit joko pitää sen tai vapauttaa sen.
+
+Tavoitteena on saada kolme kalaa.
