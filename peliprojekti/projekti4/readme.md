@@ -35,15 +35,26 @@ Pelaajalla on nimi, ikä, sijainti ja saalis. Huone tarkoittaa tässä kalastusp
 
 ## Tiedostot
 
-Projekti on tällä hetkellä tässä kansiossa:
+Projektin rakenne on jaettu eri Python-moduuleihin:
 
-```
+```text
 projekti4/
-├── projekti4.py
+├── main.py
+├── modules/
+│   ├── __init__.py
+│   ├── pelaaja.py
+│   ├── huone.py
+│   └── esine.py
 └── readme.md
 ```
 
-Peli on yhdessä Python-tiedostossa, koska siinä ei ole vielä niin paljon koodia, että sitä olisi järkevää jakaa useaan tiedostoon.
+`main.py` sisältää pelin käynnistyksen, päävalikon ja pelin toiminnot.
+
+`modules/pelaaja.py` sisältää Pelaaja-luokan.
+
+`modules/huone.py` sisältää Huone-luokan.
+
+`modules/esine.py` sisältää Esine-luokan.
 
 Pelissä käytetään myös `tallennus.json`-tiedostoa, kun peli tallennetaan.
 
@@ -71,5 +82,5 @@ Pelissä on useita funktioita, joilla eri toimintoja on jaettu omiin osiin.
 ## Käynnistys
 
 ```bash
-python projekti4.py
+python main.py
 ```
