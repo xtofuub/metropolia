@@ -136,11 +136,11 @@ def main():
         "Lohi": lohi
     }
 
-    nimi = input("Mikä on nimesi? ")
+    nimi = input("Mikä on nimesi?: ")
 
     while True:
         try:
-            ika = int(input("Minkä ikäinen olet? "))
+            ika = int(input("Minkä ikäinen olet?: "))
             break
         except ValueError:
             print("Anna ikä numerona.")
