@@ -1,0 +1,4 @@
+Ohjeet:
+
+Valitse päävalikosta haluamasi toiminto.
+Voit tutkia aluetta, katsoa inventaariota tai lopettaa pelin.
