@@ -7,7 +7,7 @@ from modules.pelaaja import Pelaaja
 
 
 def lue_tiedosto(tiedostonimi):
-    with open(tiedostonimi, "r") as tiedosto:
+    with open(tiedostonimi, "r", encoding="utf-8") as tiedosto:
         return tiedosto.read()
 
 
